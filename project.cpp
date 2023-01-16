@@ -44,7 +44,24 @@ void floating_point_operations() //function whose execution time is to be measur
   double quotient;
   double product;
 
-  
+  while (loop_no < loop_max) // while loop runs 10^9 times
+  {
+
+     for (int i=0; i<10; i++){ // addition, done 10 time per loop
+      sum = a + b;
+    }
+
+    for (int i=0; i<5; i++){ // multiplication, done 5 time per loop
+      product = a * b;
+    }
+    for (int i=0; i<2; i++){ // division, done 2 time per loop
+      quotient = a / b;
+    }
+    loop_no ++;
+    
+  }
+
+}
 
 int main()
 {
