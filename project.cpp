@@ -44,6 +44,8 @@ void floating_point_operations() //function whose execution time is to be measur
   double quotient;
   double product;
 
+  auto start_time = chrono::steady_clock::now();
+  
   while (loop_no < loop_max) // while loop runs 10^9 times
   {
 
@@ -60,6 +62,9 @@ void floating_point_operations() //function whose execution time is to be measur
     loop_no ++;
     
   }
+  
+  auto end_time = chrono::steady_clock::now();
+  cout << "Time for floating point operations: " << chrono::duration_cast<chrono::seconds>(end_time - start_time).count() << " sec" << endl;
 
 }
 
