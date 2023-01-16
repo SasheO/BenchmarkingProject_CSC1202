@@ -31,7 +31,7 @@ void integer_operations() //function whose execution time is to be measured
     
   }
   auto end_time = chrono::steady_clock::now();
-  cout << "Time for integer operations: " << chrono::duration_cast<chrono::seconds>(end_time - start_time).count() << " sec" << endl;
+  cout << "Time for integer operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
 }
 
 void floating_point_operations() //function whose execution time is to be measured
@@ -64,8 +64,7 @@ void floating_point_operations() //function whose execution time is to be measur
   }
   
   auto end_time = chrono::steady_clock::now();
-  cout << "Time for floating point operations: " << chrono::duration_cast<chrono::seconds>(end_time - start_time).count() << " sec" << endl;
-
+  cout << "Time for floating point operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
 }
 
 int main()
