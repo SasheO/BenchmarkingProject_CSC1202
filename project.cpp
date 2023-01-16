@@ -34,8 +34,21 @@ void integer_operations() //function whose execution time is to be measured
   cout << "Time for integer operations: " << chrono::duration_cast<chrono::seconds>(end_time - start_time).count() << " sec" << endl;
 }
 
+void floating_point_operations() //function whose execution time is to be measured
+{
+	long long loop_max = 1000000000;
+  long long loop_no = 0;
+  double a = 2.5;
+  double b = 15.92;
+  double sum;
+  double quotient;
+  double product;
+
+  
+
 int main()
 {
   integer_operations();
+  floating_point_operations();
   return 0;
 }
