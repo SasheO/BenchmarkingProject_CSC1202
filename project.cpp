@@ -14,17 +14,17 @@ void integer_operations() //function whose execution time is to be measured
   int product;
 
   auto start_time = chrono::steady_clock::now();
-  while (loop_no < loop_max)
+  while (loop_no < loop_max) // while loop runs 10^9 times
   {
 
-     for (int i=0; i<10; i++){ // addition
+     for (int i=0; i<10; i++){ // addition, done 10 time per loop
       sum = a + b;
     }
 
-    for (int i=0; i<5; i++){ // multiplication
+    for (int i=0; i<5; i++){ // multiplication, done 5 time per loop
       product = a * b;
     }
-    for (int i=0; i<; i++){ // division
+    for (int i=0; i<; i++){ // division, done 2 time per loop
       quotient = a / b;
     }
     loop_no ++;
