@@ -75,6 +75,8 @@ void memory_operations(){
   long long loop_no = 0;
   int a;
   int b = 11;
+
+  auto start_time = chrono::steady_clock::now();
   for (int i = 0; i < 10000; i++){ // runs 10^4 times
     while (loop_no < loop_max) // while loop runs 5 * 10^5 times
     {
@@ -92,6 +94,8 @@ void memory_operations(){
     ptr = arr;
     b = b - 15;
   }
+  auto end_time = chrono::steady_clock::now();
+  cout << "Time for memory operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
   
 
 }
