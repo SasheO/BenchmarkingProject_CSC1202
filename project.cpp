@@ -80,19 +80,16 @@ void memory_operations(){
   for (int i = 0; i < 10000; i++){ // runs 10^4 times
     while (loop_no < loop_max) // while loop runs 5 * 10^5 times
     {
-      // read from memory
-      a = *ptr;
+      a = *ptr; // read from memory
 
-      // write to memory
-      *ptr = b;
+      *ptr = b; // write to memory
 
       ptr = ptr + 1; // move to the next slot in memory
 
       loop_no++;
     }
 
-    ptr = arr;
-    b = b - 15;
+    ptr = arr; // set pointer back to beginning of array in next loop
   }
   auto end_time = chrono::steady_clock::now();
   cout << "Time for memory operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
