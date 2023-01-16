@@ -67,6 +67,13 @@ void floating_point_operations() //function whose execution time is to be measur
   cout << "Time for floating point operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
 }
 
+void memory_operations(){
+  int *ptr;
+  int arr[5];
+  ptr = arr; // store the address of the first element of arr in ptr
+  
+}
+
 int main()
 {
   integer_operations();
