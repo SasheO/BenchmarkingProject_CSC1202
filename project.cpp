@@ -24,7 +24,7 @@ void integer_operations() //function whose execution time is to be measured
     for (int i=0; i<5; i++){ // multiplication, done 5 time per loop
       product = a * b;
     }
-    for (int i=0; i<; i++){ // division, done 2 time per loop
+    for (int i=0; i<2; i++){ // division, done 2 time per loop
       quotient = a / b;
     }
     loop_no ++;
