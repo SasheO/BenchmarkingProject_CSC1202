@@ -67,6 +67,7 @@ void floating_point_operations() //function whose execution time is to be measur
   cout << "Time for floating point operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
 }
 
+// TODO: fix this. output given is 1 ms??
 void memory_operations(){
   int *ptr;
   int arr[500000];
@@ -99,8 +100,8 @@ void memory_operations(){
 
 int main()
 {
-  integer_operations();
-  floating_point_operations();
+//   integer_operations();
+//   floating_point_operations();
   memory_operations();
   return 0;
 }
