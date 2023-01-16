@@ -78,7 +78,15 @@ void memory_operations(){
   for (int i = 0; i < 10000; i++){ // runs 10^4 times
     while (loop_no < loop_max) // while loop runs 5 * 10^5 times
     {
-      
+      // read from memory
+      a = *ptr;
+
+      // write to memory
+      *ptr = b;
+
+      ptr = ptr + 1; // move to the next slot in memory
+
+      loop_no++;
     }
 
     ptr = arr;
