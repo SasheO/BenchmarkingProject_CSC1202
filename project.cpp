@@ -8,8 +8,13 @@ void integer_addition() //function whose execution time is to be measured
   long long loop_no = 0;
   long a = 2;
   long b = 4;
+  long sum;
 
-
+  while (loop_no < loop_max)
+  {
+    sum = a + b;
+    loop_no ++;
+  }
 }
 
 int main()
