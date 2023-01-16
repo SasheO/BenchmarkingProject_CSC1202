@@ -78,8 +78,14 @@ void memory_operations(){
   while (loop_no < loop_max) // while loop runs 5 * 10^9 times
   {
     // read from memory
+    a = *ptr;
 
     // write to memory
+    *ptr = b;
+
+    ptr = ptr + 1; // move to the next slot in memory
+
+    loop_no++;
   }
 
 }
@@ -88,5 +94,6 @@ int main()
 {
   integer_operations();
   floating_point_operations();
+  memory_operations();
   return 0;
 }
