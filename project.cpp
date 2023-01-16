@@ -69,24 +69,22 @@ void floating_point_operations() //function whose execution time is to be measur
 
 void memory_operations(){
   int *ptr;
-  int arr[5000000000];
+  int arr[500000];
   ptr = arr; // store the address of the first element of arr in ptr
-  long long loop_max = 5000000000;
+  long long loop_max = 500000;
   long long loop_no = 0;
   int a;
   int b = 11;
-  while (loop_no < loop_max) // while loop runs 5 * 10^9 times
-  {
-    // read from memory
-    a = *ptr;
+  for (int i = 0; i < 10000; i++){ // runs 10^4 times
+    while (loop_no < loop_max) // while loop runs 5 * 10^5 times
+    {
+      
+    }
 
-    // write to memory
-    *ptr = b;
-
-    ptr = ptr + 1; // move to the next slot in memory
-
-    loop_no++;
+    ptr = arr;
+    b = b - 15;
   }
+  
 
 }
 
