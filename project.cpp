@@ -123,7 +123,12 @@ void harddrive_benchmark_1(){
 }
 
 void harddrive_benchmark_2(){
-  
+  char outplaceholder[10000]; // create static array of 100 chars 1 byte each
+  char inplaceholder[10000]; // create static array of 100 chars 1 byte each
+  ofstream outputFile("../out.bin", ios::out | ios::binary);
+  ifstream inputFile("../data.bin", ios::out | ios::binary);
+  long long loop_max = 100000;
+  long long loop_no = 0;
 }
 
 int main()
@@ -131,8 +136,8 @@ int main()
 //   integer_operations();
 //   floating_point_operations();
   // memory_operations();
-  harddrive_benchmark_1();
-  // harddrive_benchmark_2();
+  // harddrive_benchmark_1();
+  harddrive_benchmark_2();
 
   return 0;
 }
