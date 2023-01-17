@@ -129,6 +129,18 @@ void harddrive_benchmark_2(){
   ifstream inputFile("../data.bin", ios::out | ios::binary);
   long long loop_max = 100000;
   long long loop_no = 0;
+
+  auto start_time = chrono::steady_clock::now();
+  while (loop_no<loop_max){ // write to file 10^5 times, 10000 byte per time
+    outputFile.write(outplaceholder, 10000);
+    inputFile.read(inplaceholder, 10000);
+    loop_no++;
+  }
+  auto end_time = chrono::steady_clock::now();
+  outputFile.close();
+  inputFile.close();
+
+  cout << "Time for hard drive benchmark 2: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
 }
 
 int main()
