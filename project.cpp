@@ -31,7 +31,7 @@ void integer_operations() //function whose execution time is to be measured
     
   }
   auto end_time = chrono::steady_clock::now();
-  cout << "Time for integer operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
+  cout << "Time for integer operations: " << chrono::duration_cast<chrono::nanoseconds>(end_time - start_time).count() << " ns" << endl;
 }
 
 void floating_point_operations() //function whose execution time is to be measured
@@ -64,7 +64,7 @@ void floating_point_operations() //function whose execution time is to be measur
   }
   
   auto end_time = chrono::steady_clock::now();
-  cout << "Time for floating point operations: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
+  cout << "Time for floating point operations: " << chrono::duration_cast<chrono::nanoseconds>(end_time - start_time).count() << " ns" << endl;
 }
 
 // TODO: fix this. output given is 1 ms??
@@ -119,7 +119,7 @@ void harddrive_benchmark_1(){
   outputFile.close();
   inputFile.close();
 
-  cout << "Time for hard drive benchmark 1: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
+  cout << "Time for hard drive benchmark 1: " << chrono::duration_cast<chrono::nanoseconds>(end_time - start_time).count() << " ns" << endl;
 }
 
 void harddrive_benchmark_2(){
@@ -140,16 +140,15 @@ void harddrive_benchmark_2(){
   outputFile.close();
   inputFile.close();
 
-  cout << "Time for hard drive benchmark 2: " << chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count() << " ms" << endl;
+  cout << "Time for hard drive benchmark 2: " << chrono::duration_cast<chrono::nanoseconds>(end_time - start_time).count() << " ns" << endl;
 }
 
 int main()
 {
-//   integer_operations();
-//   floating_point_operations();
-  // memory_operations();
-  // harddrive_benchmark_1();
+  integer_operations();
+  floating_point_operations();
+  memory_operations();
+  harddrive_benchmark_1();
   harddrive_benchmark_2();
-
   return 0;
 }
