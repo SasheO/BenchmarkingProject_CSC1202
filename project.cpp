@@ -100,10 +100,21 @@ void memory_operations(){
 
 }
 
+void harddrive_benchmark_1(){
+
+}
+
+void harddrive_benchmark_2(){
+  
+}
+
 int main()
 {
 //   integer_operations();
 //   floating_point_operations();
-  memory_operations();
+  // memory_operations();
+  harddrive_benchmark_1();
+  // harddrive_benchmark_2();
+
   return 0;
 }
