@@ -103,10 +103,10 @@ void memory_operations(){
 void harddrive_benchmark_1(){
 
   char placeholder[100]; // create static array of 100 chars 1 byte each
-  ofstream outputFile("data.bin", ios::out | ios::binary);
+  ofstream outputFile("../data.bin", ios::out | ios::binary);
   long long loop_max = 10000000;
   long long loop_no = 0;
-  
+
   while (loop_no<loop_max){ // write to file 10^7 times, 100 byte per time
     outputFile.write(placeholder, 100);
     loop_no++;
