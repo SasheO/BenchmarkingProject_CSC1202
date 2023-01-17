@@ -102,15 +102,17 @@ void memory_operations(){
 
 void harddrive_benchmark_1(){
 
-  char placeholder[100]; // create static array of 100 chars 1 byte each
+  char outplaceholder[100]; // create static array of 100 chars 1 byte each
+  char inplaceholder[100]; // create static array of 100 chars 1 byte each
   ofstream outputFile("../out.bin", ios::out | ios::binary);
-  ifstream inputFile("../in.bin", ios::out | ios::binary);
+  ifstream inputFile("../data.bin", ios::out | ios::binary);
   long long loop_max = 10000000;
   long long loop_no = 0;
 
   auto start_time = chrono::steady_clock::now();
   while (loop_no<loop_max){ // write to file 10^7 times, 100 byte per time
-    outputFile.write(placeholder, 100);
+    outputFile.write(outplaceholder, 100);
+    inputFile.read(inplaceholder, 100);
     loop_no++;
   }
   auto end_time = chrono::steady_clock::now();
