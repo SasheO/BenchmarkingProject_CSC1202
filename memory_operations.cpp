@@ -1,4 +1,5 @@
 int main(){
+    // TODO: fix this. output given is 1 ms??
     int *ptr;
     int arr[50000];
     ptr = arr; // store the address of the first element of arr in ptr
