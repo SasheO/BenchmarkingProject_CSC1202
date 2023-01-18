@@ -1,3 +1,8 @@
+#include <iostream>
+#include <fstream>
+#include <chrono>
+using namespace std;
+
 int main(){
     // TODO: fix this. output given is 1 ms??
     int *ptr;
