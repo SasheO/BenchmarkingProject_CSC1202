@@ -1,3 +1,8 @@
+#include <iostream>
+#include <fstream>
+#include <chrono>
+using namespace std;
+
 int main(){
     char outplaceholder[100]; // create static array of 100 chars 1 byte each
     char inplaceholder[100]; // create static array of 100 chars 1 byte each
