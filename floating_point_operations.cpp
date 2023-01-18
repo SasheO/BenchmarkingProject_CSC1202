@@ -6,8 +6,6 @@ using namespace std;
 int main(){
     long long loop_max = 1000000000;
     long long loop_no = 0;
-    double a = 2.5;
-    double b = 15.92;
     double sum;
     double quotient;
     double product;
@@ -18,14 +16,14 @@ int main(){
     {
 
         for (int i=0; i<10; i++){ // addition, done 10 time per loop
-        sum = a + b;
+        sum = 15.1 + 13.2;
     }
 
     for (int i=0; i<5; i++){ // multiplication, done 5 time per loop
-        product = a * b;
+        product = 15.1 * 13.2;
     }
     for (int i=0; i<2; i++){ // division, done 2 time per loop
-        quotient = a / b;
+        quotient = 15.1 / 13.2
     }
     loop_no ++;
 
