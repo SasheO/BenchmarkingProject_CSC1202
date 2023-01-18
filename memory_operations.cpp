@@ -8,7 +8,7 @@ int main(){
     int *ptr;
     int arr[50000];
     ptr = arr; // store the address of the first element of arr in ptr
-    long long loop_max = 500000;
+    long long loop_max = 50000;
     long long loop_no = 0;
     int a;
     int b = 11;
@@ -27,6 +27,9 @@ int main(){
     ptr = arr; // set pointer back to beginning of array in next loop
 
     }
+
+    loop_no = 0;
+
     for (int i = 0; i < 100000; i++){ // runs 10^4 times
     while (loop_no < loop_max) // while loop runs 5 * 10^5 times
     {
