@@ -19,6 +19,17 @@ int main(){
     {
         a = *ptr; // read from memory
 
+        ptr = ptr + 1; // move to the next slot in memory
+
+        loop_no++;
+    }
+
+    ptr = arr; // set pointer back to beginning of array in next loop
+
+    }
+    for (int i = 0; i < 100000; i++){ // runs 10^4 times
+    while (loop_no < loop_max) // while loop runs 5 * 10^5 times
+    {
         *ptr = b; // write to memory
 
         ptr = ptr + 1; // move to the next slot in memory
