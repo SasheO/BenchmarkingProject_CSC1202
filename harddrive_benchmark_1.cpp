@@ -22,7 +22,6 @@ int main(){
     inputFile.read(b_100bytes, sizeof(b_100bytes) - 1);
     loop_no++;
     }
-    cout <<b_100bytes << endl;
     auto end_time = chrono::steady_clock::now();
     inputFile.close();
 
