@@ -4,10 +4,10 @@
 using namespace std;
 
 int main(){
-    char outplaceholder[10000]; // create static array of 100 chars 1 byte each
-    char inplaceholder[10000]; // create static array of 100 chars 1 byte each
-    ofstream outputFile("../out.bin", ios::out | ios::binary);
-    ifstream inputFile("../data.bin", ios::out | ios::binary);
+    string a_10000bytes = string(10000, 'a');
+    ofstream outputFile("../data.txt");
+    ifstream inputFile("../data.txt");
+    char b_100bytes[10001]; // 101 because of 100 bytes and null char
     long long loop_max = 100000;
     long long loop_no = 0;
 
