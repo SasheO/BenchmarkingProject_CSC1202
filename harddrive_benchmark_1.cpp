@@ -5,10 +5,8 @@ using namespace std;
 
 int main(){
     string a_100bytes = string(100, 'a');
-    char outplaceholder[100]; // create static array of 100 chars 1 byte each
-    char inplaceholder[100]; // create static array of 100 chars 1 byte each
-    ofstream outputFile("../out.bin", ios::out | ios::binary);
-    ifstream inputFile("../data.bin", ios::out | ios::binary);
+    ofstream outputFile("../out.txt"\);
+    ifstream inputFile("../data.txt");
     long long loop_max = 10000000;
     long long loop_no = 0;
 
