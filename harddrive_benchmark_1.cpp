@@ -14,14 +14,15 @@ int main(){
     outputFile << a_100bytes;
     loop_no++;
     }
-    auto end_time = chrono::steady_clock::now();
     outputFile.close();
 
     ifstream inputFile("../data.txt");
+    char b_100bytes[101]; // 101 because of 100 bytes and null char
     while (loop_no<loop_max){ // write to file 10^7 times, 100 byte per time
-    
+    inputFile.read(b_100bytes, sizeof(b_100bytes) - 1);
     loop_no++;
     }
+    cout <<b_100bytes << endl;
     auto end_time = chrono::steady_clock::now();
     inputFile.close();
 
