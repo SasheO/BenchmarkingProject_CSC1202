@@ -23,7 +23,7 @@ int main(){
         product = 15.1 * 13.2;
     }
     for (int i=0; i<2; i++){ // division, done 2 time per loop
-        quotient = 15.1 / 13.2
+        quotient = 15.1 / 13.2;
     }
     loop_no ++;
 
