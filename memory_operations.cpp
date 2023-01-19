@@ -6,7 +6,6 @@ using namespace std;
 int main(){
     int arr[50000];
     int a;
-    int b = 11;
 
     auto start_time = chrono::steady_clock::now();
     for (int i = 0; i < 100000; i++){ // runs 10^5 times
