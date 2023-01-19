@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(){
+    string a_100bytes = string(100, 'a');
     char outplaceholder[100]; // create static array of 100 chars 1 byte each
     char inplaceholder[100]; // create static array of 100 chars 1 byte each
     ofstream outputFile("../out.bin", ios::out | ios::binary);
