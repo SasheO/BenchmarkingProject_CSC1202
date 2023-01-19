@@ -18,6 +18,11 @@ int main(){
     outputFile.close();
 
     ifstream inputFile("../data.txt");
+    while (loop_no<loop_max){ // write to file 10^7 times, 100 byte per time
+    
+    loop_no++;
+    }
+    auto end_time = chrono::steady_clock::now();
     inputFile.close();
 
     cout << "Time for hard drive benchmark 1: " << chrono::duration_cast<chrono::nanoseconds>(end_time - start_time).count() << " ns" << endl;
