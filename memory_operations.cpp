@@ -5,11 +5,7 @@ using namespace std;
 
 int main(){
     // TODO: fix this. output given is 1 ms??
-    int *ptr;
     int arr[50000];
-    ptr = arr; // store the address of the first element of arr in ptr
-    long long loop_max = 50000;
-    long long loop_no = 0;
     int a;
     int b = 11;
 
@@ -21,15 +17,12 @@ int main(){
     }
     }
 
-    loop_no = 0;
 
     for (int i = 0; i < 100000; i++){ // runs 10^5 times
     for (int j = 0; j < 50000; j++) // loop runs 5 * 10^4 times
     {
         arr[j] = 12;
     }
-
-    ptr = arr; // set pointer back to beginning of array in next loop
 
     }
 
