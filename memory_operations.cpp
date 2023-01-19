@@ -15,17 +15,10 @@ int main(){
 
     auto start_time = chrono::steady_clock::now();
     for (int i = 0; i < 100000; i++){ // runs 10^4 times
-    while (loop_no < loop_max) // while loop runs 5 * 10^5 times
+    for (int j = 0; j < 50000; j++) // while loop runs 5 * 10^5 times
     {
-        a = *ptr; // read from memory
-
-        ptr = ptr + 1; // move to the next slot in memory
-
-        loop_no++;
+        a = arr[j];
     }
-
-    ptr = arr; // set pointer back to beginning of array in next loop
-
     }
 
     loop_no = 0;
