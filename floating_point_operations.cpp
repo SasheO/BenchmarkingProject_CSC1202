@@ -15,7 +15,7 @@ int main(){
     while (loop_no < loop_max) // while loop runs 10^9 times
     {
 
-        for (int i=0; i<10; i++){ // addition, done 10 time per loop
+    for (int i=0; i<10; i++){ // addition, done 10 time per loop
         sum = 15.1 + 13.2;
     }
 
