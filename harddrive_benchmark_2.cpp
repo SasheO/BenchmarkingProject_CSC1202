@@ -18,8 +18,6 @@ int main(){
     }
     outputFile.close();
 
-    loop_no = 0;
-
     while (loop_no<loop_max){ // write to file 10^5 times, 10000 byte per time
     inputFile.read(b_10000bytes, sizeof(b_10000bytes) - 1);
     loop_no++;
