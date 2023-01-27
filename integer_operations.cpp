@@ -28,6 +28,11 @@ int main(){
 
     }
     auto end_time = chrono::steady_clock::now();
+
+    cout << "sum byte size:" << sizeof(sum) << endl;
+    cout << "product byte size:" << sizeof(product) << endl;
+    cout << "quotient byte size:" << sizeof(quotient) << endl;
+
     cout << "Time for integer operations: " << chrono::duration_cast<chrono::nanoseconds>(end_time - start_time).count() << " ns" << endl;
     return 0;
 }
